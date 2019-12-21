@@ -16,14 +16,27 @@ public class MonsterController : MonoBehaviour
     }
 
     // Update is called once per frame
+
     void Update()
     {
-
         if (target.transform != null)
         {
             dir = target.transform.position - this.transform.position;
             this.m_RigidBody2D.MovePosition(this.transform.position + Vector3.Normalize(dir) * this.m_MoveSpeed * Time.deltaTime);
-            
+
+            if (dir.y > 0.0f)
+            {
+                this.SetBool("back", true);
+            }
+            else
+            {
+                this.SetBool("back", false);
+            }
         }
+    }
+
+    private void SetBool(string Name, bool Value)
+    {
+        this.GetComponent<Animator>().SetBool(Name, Value);
     }
 }
