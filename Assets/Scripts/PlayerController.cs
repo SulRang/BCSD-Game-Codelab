@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     private Animator m_Animator = null;
     private SpriteRenderer m_SpriteRenderer = null;
     private bool m_isright = true;
+    private float m_MaxHealth = 50.0f;//여기는 마음대로 정해주세요(플레이어는 높은게 좋겠죠?)
+
+
+    private HealthBarController m_HealthController;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,9 @@ public class PlayerController : MonoBehaviour
         this.m_ChildTransform = this.transform.GetChild(0);
         this.m_Animator = m_ChildTransform.GetComponent<Animator>();
         this.m_SpriteRenderer = m_ChildTransform.GetComponent<SpriteRenderer>();
+
+        this.m_HealthController = this.transform.GetChild(1).GetComponent<HealthBarController>();
+        this.m_HealthController.setMaxHealth(this.m_MaxHealth);
     }
 
     // Update is called once per frame
