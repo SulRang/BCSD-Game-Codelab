@@ -1,3 +1,4 @@
+
 # BCSD-Game-Codelab
 ?BCSD Game Codelab ÀÔ´Ï´Ù.
 Unity¸¦ ÀÌ¿ëÇÏ¿© °£´ÜÇÑ °ÔÀÓÀ» Á¦ÀÛÇØº¸´Â ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
@@ -58,6 +59,9 @@ Android Build Support¸¦ Ã¼Å©ÇÑ ÈÄ ¿Ï·á¸¦ ´­·¯ ¼³Ä¡¸¦ ÁøÇàÇÕ´Ï´Ù.
 ## ÇÁ·ÎÁ§Æ® °³¹ß
 
 ### 0. À¯´ÏÆ¼ ¿£Áø
+
+
+![UnityEngine](./image/UnityEngine.png)
 ¿ŞÂÊ¿¡ hierarchy¶ó°í ½áÀÖ´Â Ã¢Àº °ÔÀÓÀ» ±¸¼ºÇÏ´Â ¿ä¼ÒµéÀÌ ³ªÅ¸³ª´Â Ã¢ÀÔ´Ï´Ù. ÀúÈñ°¡ È­¸é¿¡ ¹«¾ùÀÎ°¡¸¦ º¸ÀÌ°í ½Í´Ù°í ÇÒ ¶§ ÀÌ°÷¿¡ ¸¸µé¾î¼­ º¸ÀÌ°Ô ÇÒ ¼ö ÀÖ½À´Ï´Ù.
 
 ÇÏ´ÜÀÇ Project´Â ´Ü¼øÇÑ ExplorerÀÔ´Ï´Ù. ÀÌ°÷¿¡¼­ ÀúÈñ°¡ ¸¸µç Script³ª ImageµîÀ» °¡Á®¿Í¼­ Hierachy¿¡ µå·¡±×ÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
@@ -80,60 +84,232 @@ Android Build Support¸¦ Ã¼Å©ÇÑ ÈÄ ¿Ï·á¸¦ ´­·¯ ¼³Ä¡¸¦ ÁøÇàÇÕ´Ï´Ù.
 (**Tag**´Â ÇØ´ç **¿ÀºêÁ§Æ®°¡ ¹«¾ùÀÎÁö È®ÀÎ**  ¶Ç´Â ÇØ´ç **¿ÀºêÁ§Æ®¸¦ Ã£±â** À§ÇÑ ¿ëµµ·Î ¾²ÀÔ´Ï´Ù.)
 
 ![Alt text](./image/Player3.png)
+![Alt text](./image/Player4.png)
+±× ÈÄ ResourcesÆú´õ¿¡ topdown_shooter/charater¿¡ ÀÖ´Â 2¸¦ µå·¡±× ¾Ø µå·ÓÀ¸·Î Player¿¡°Ô ³Ö¾îÁİ´Ï´Ù.
+
+![Alt text](./image/Player5.png)
 ´ÙÀ½Àº ÇÏ´ÜÀÇ ProjectÃ¢À¸·Î ³Ñ¾î°¡ º¸°Ú½À´Ï´Ù.
-ProjcetÃ¢¿¡ ¿øÇÏ´Â À§Ä¡·Î ÀÌµ¿ÇÕ´Ï´Ù.
-(¿ìÅ¬¸¯À» ÇØ¼­ Æú´õ¸¦ ¸¸µå´Â °ÍÀ» ÃßÃµÇÕ´Ï´Ù.)
+ProjcetÃ¢¿¡ Scripts Æú´õ·Î ÀÌµ¿ÇÕ´Ï´Ù.
+(µû·Î Æú´õ¸¦ ¸¸µå¼Åµµ µË´Ï´Ù.)
+
+![Alt text](./image/Player6.png)
 ¿ìÅ¬¸¯À» ÇÑµÚ Script»ı¼ºÀ» ´­·¯ PlayerController.cs ¶ó´Â ÆÄÀÏÀ» ¸¸µì´Ï´Ù.
 
-±× ÈÄ ´ÙÀ½¿¡ µû¶ó ÄÚµå¸¦ ÀÛ¼ºÇÕ´Ï´Ù.
-(º¹ºÙÇÕ´Ï´Ù.)
 
-![Alt text](./image/Player4.png)
+ÆÄÀÏÀ» ¿­¾î¼­ ¾Æ·¡ÀÇ CodeµéÀ» ³Ö¾îÁİ´Ï´Ù.
+![Alt text](./image/Player7.png)
+``` 
+public class PlayerController : MonoBehaviour
+{
+    public float m_MoveSpeed;
+    private Rigidbody2D m_Rigidbody = null;
+    private float hori, vert;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.m_Rigidbody = this.GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        hori = Input.GetAxisRaw("Horizontal");
+        vert = Input.GetAxisRaw("Vertical");
+    }
+
+    void FixedUpdate()
+    {
+        this.m_Rigidbody.velocity = new Vector2(hori, vert) * m_MoveSpeed;
+    }
+}
+```
 ´Ù½Ã ¾Æ±î ¸¸µç Player GameObject·Î °¡¼­ ¹æ±İ ÀÛ¾÷ÇÑ Script¸¦ µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ ³Ö¾îÁİ´Ï´Ù.
 
-![Alt text](./image/Player4.png)
-InspectorÃ¢¿¡ º¸¸é Script°¡ º¸ÀÏÅÙµ¥ ÀÌ°÷¿¡ ¿øÇÏ´Â Speed¸¦ ³Ö¾îÁİ´Ï´Ù.
+![Alt text](./image/Player8.png)
+InspectorÃ¢¿¡ º¸¸é Script°¡ º¸ÀÏÅÙµ¥ ÀÌ°÷¿¡ ³ª¿À´Â Move Speed¿¡ ¿øÇÏ´Â Speed¸¦ ³Ö¾îÁİ´Ï´Ù.
 
-![Alt text](./image/Player4.png)
+![Alt text](./image/Player9.png)
+ÇÃ·¹ÀÌ¾î°¡ ³Ê¹« ÀÛÀ¸´Ï±î ScaleÀ» ¹Ù²ã ÁÖÁÒ. (InspectorÃ¢¿¡ Transform¿¡ ÀÖ½À´Ï´Ù.)
+
+![Alt text](./image/Player10.png)
+´ÙÀ½À¸·Î´Â Add Component¸¦ ´­·¯¼­ RigidBody2D¸¦ ³Ö¾îÁİ´Ï´Ù.
+
+![Alt text](./image/Player11.png)
+±×¸®°í Body TypeÀ» KinematicÀ¸·Î ¹Ù²ãÁİ´Ï´Ù.
+
 ±×·³ ÇÃ·¹ÀÌ ¹öÆ°À» ´©¸¥ ÈÄ ¹æÇâÅ°¸¦ ÅëÇØ ¿òÁ÷¿© º¾½Ã´Ù.
 (ÇÃ·¹ÀÌ ¹öÆ°Àº »ó´Ü Áß¾Ó¿¡ ÀÖ½À´Ï´Ù. [¿À¸¥ÂÊ »ï°¢Çü])
 
 ### 2. ÇÃ·¹ÀÌ¾î ¾Ö´Ï¸ŞÀÌ¼Ç ³Ö±â
 ![Alt text](./image/Animation1.png)
-Player GameObject¿¡ ¿ìÅ¬¸¯À» ÇÑ µÚ Create Empty¸¦ ´­·¯ Áİ´Ï´Ù.
+ProjectÃ¢¿¡ ¾Æ±î character·Î °¡¼­ animations Æú´õ¿¡ ÀÖ´Â PlayerAnimationÀ» ¾Æ±î ³ÖÀº ÀÌ¹ÌÁö¿¡ µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
 
 ![Alt text](./image/Animation2.png)
-InspectorÃ¢À¸·Î °¡¼­ new Component¸¦ ´­·¯ÁØµÚ SpriteRenderer¸¦ Ãß°¡ÇØ Áİ´Ï´Ù.
-(ÀÌ¹ÌÁö¸¦ º¸¿©ÁÖ´Â ¿ÀºêÁ§Æ®¸¦ ¸¸µì´Ï´Ù.)
-
 ![Alt text](./image/Animation3.png)
-ProjectÃ¢¿¡ ÀÖ´Â PlayerAnimationÀ» ÀÌ Object¿¡ µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
-
 ![Alt text](./image/Animation4.png)
-
 ![Alt text](./image/Animation5.png)
-´ÙÀ½ÀÇ CodeµéÀ» PlayerController.cs¿¡ Ãß°¡ÇØ Áİ´Ï´Ù.
+![Alt text](./image/Animation6.png)
+PlayerController.cs¸¦ ´ÙÀ½°ú °°ÀÌ º¯°æÇØ Áİ´Ï´Ù.
+```
+public class PlayerController : MonoBehaviour
+{
+    public float m_MoveSpeed;
+    private Rigidbody2D m_Rigidbody = null;
+    private float hori, vert;
+
+    private Transform m_ChildTransform;
+    private Animator m_Animator = null;
+    private SpriteRenderer m_SpriteRenderer = null;
+    private bool m_isright = true;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.m_Rigidbody = this.GetComponent<Rigidbody2D>();
+
+        this.m_ChildTransform = this.transform.GetChild(0);
+        this.m_Animator = m_ChildTransform.GetComponent<Animator>();
+        this.m_SpriteRenderer = m_ChildTransform.GetComponent<SpriteRenderer>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        hori = Input.GetAxisRaw("Horizontal");
+        vert = Input.GetAxisRaw("Vertical");
+
+        this.UpdateAnimations();
+    }
+
+    void FixedUpdate()
+    {
+        this.m_Rigidbody.velocity = new Vector2(hori, vert) * m_MoveSpeed;
+    }
+
+    private void UpdateAnimations()
+    {
+        Vector3 dir = m_ChildTransform.localScale;
+        if (vert > 0.0f)
+            this.SetBool("up", true);
+
+        else if (vert < -0.0f)
+            this.SetBool("down", true);
+
+        else
+        {
+            this.SetBool("up", false);
+            this.SetBool("down", false);
+        }
+
+        if (hori > 0.0f)
+        {
+            this.SetBool("side", true);
+            if (!this.m_isright)
+            {
+                this.m_ChildTransform.localScale = new Vector3(-1 * dir.x, dir.y);
+                this.m_isright = true;
+            }
+        }
+        else if (hori < -0.0f)
+        {
+            this.SetBool("side", true);
+            if (this.m_isright)
+            {
+                this.m_ChildTransform.localScale = new Vector3(-1 * dir.x, dir.y);
+                this.m_isright = false;
+            }
+        }
+        else
+            this.SetBool("side", false);
+    }
+
+    private void SetBool(string Name, bool Value)
+    {
+        this.m_Animator.SetBool(Name, Value);
+    }
+}
+
+```
 
 ### 3. ¸ó½ºÅÍ »ı¼º ¹× ¿òÁ÷ÀÌ±â
 ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î¸¦ µû¶ó´Ù´Ï´Â ¸ó½ºÅÍ¸¦ Ãß°¡ÇØ º¸°Ú½À´Ï´Ù.
 
 ![Alt text](./image/Monster1.png)
-¸ÕÀú Create Empty¸¦ ÇÑ ÈÄ ÀÌ¸§À» Monster·Î ¹Ù²ãÁİ´Ï´Ù.
+¸ÕÀú Create Empty¸¦ ÇÑ ÈÄ ÀÌ¸§°ú tag¸¦ Monster·Î ¹Ù²ãÁİ´Ï´Ù.
+RigidBody2D¸¦ Ãß°¡ÇÏ°í Gravity ScaleÀ» 0À¸·Î ¼³Á¤ÇØÁİ´Ï´Ù.
+(Body TypeÀº Dynamic)
 (ÀÚ¼¼ÇÑ ¼³¸íÀº 1¿¡ ÀÖ½À´Ï´Ù.)
 
+
 ![Alt text](./image/Monster2.png)
+add Component·Î Sprite Renderer¸¦
+Ãß°¡ÇÑ´ÙÀ½ MonsterÆú´õ¿¡ ÀÖ´Â SlimeÀÌ¹ÌÁö¸¦  Sprite¿¡ µå·¡±× ¾Ø µå·ÓÀ¸·Î Ãß°¡ÇØ Áİ´Ï´Ù.
+(Àß º¸ÀÌµµ·Ï ScaleÀ» Á¶Á¤ÇØ Áİ´Ï´Ù.)
+
 MonsterController.cs ½ºÅ©¸³Æ®¸¦ ¸¸µç ÈÄ
 ´ÙÀ½ÀÇ CodeµéÀ» ÀÛ¼ºÇØ Áİ´Ï´Ù.
 Monster GameObject¿¡ Script¸¦ Ãß°¡ÇÑ ÈÄ Play¹öÆ°À» ÅëÇØ È®ÀÎÇØ º¾´Ï´Ù.
+```
+
+public class MonsterController : MonoBehaviour
+{
+    GameObject target;
+    Rigidbody2D m_RigidBody2D;
+    public float m_MoveSpeed = 3.0f;
+    private Vector3 dir;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.target = GameObject.FindGameObjectWithTag("Player");
+        this.m_RigidBody2D = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (target.transform != null)
+        {
+            dir = target.transform.position - this.transform.position;
+            this.m_RigidBody2D.MovePosition(this.transform.position + Vector3.Normalize(dir) * this.m_MoveSpeed * Time.deltaTime);
+            
+        }
+    }
+}
+
+```
 
 ![Alt text](./image/Monster3.png)
 Àß ¿òÁ÷ÀÎ´Ù¸é ´ÙÀ½Àº Monster¿¡°Ô AnimationÀ» ³Ö¾îÁÖ°Ú½À´Ï´Ù.
-Project Ã¢¿¡¼­ MonsterAnimationÀ» Ã£¾Æ¼­ Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
-¾Æ±î¿Í °°ÀÌ New Component¸¦ ÅëÇØ SpriteRender¸¦ Ãß°¡ÇØ Áİ´Ï´Ù.
-(ÀÌ¹ø¿¡´Â µû·Î Create Empty¸¦ ¾ÈÇØÁÖ¾îµµ µË´Ï´Ù.)
+Project Ã¢¿¡¼­ MonsterAnimation(slime1_front)À» Ã£¾Æ¼­ Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
 
-![Alt text](./image/Monster4.png)
-ÀÚ ±×·³ ´Ù½Ã Play ¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
+´ÙÀ½ÀÇ CodeµéÀ» Ãß°¡ÇØ ÁÖ°í
+(Update´Â º¯°æÀÔ´Ï´Ù.)
+```
+	void Update()
+    {
+        if (target.transform != null)
+        {
+            dir = target.transform.position - this.transform.position;
+            this.m_RigidBody2D.MovePosition(this.transform.position + Vector3.Normalize(dir) * this.m_MoveSpeed * Time.deltaTime);
+
+            if (dir.y > 0.0f)
+            {
+                this.SetBool("back", true);
+            }
+            else
+            {
+                this.SetBool("back", false);
+            }
+        }
+    }
+    
+    private void SetBool(string Name, bool Value)
+    {
+        this.GetComponent<Animator>().SetBool(Name, Value);
+    }
+
+```
+´Ù½Ã Play ¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
 
 ### 5. ÇÃ·¹ÀÌ¾î¸¦ µû¶ó´Ù´Ï´Â Ä«¸Ş¶ó ¸¸µé±â
 ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î°¡ ¿òÁ÷ÀÌ´Â °Í¿¡ µû¶ó¼­ °°ÀÌ ¿òÁ÷ÀÌ´Â Ä«¸Ş¶ó¸¦ ¸¸µé¾î º¸°Ú½À´Ï´Ù.
@@ -141,10 +317,35 @@ Project Ã¢¿¡¼­ MonsterAnimationÀ» Ã£¾Æ¼­ Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡Ç
 ProjectÃ¢¿¡ ¿ìÅ¬¸¯À¸·Î Script¸¦ ¸¸µé¾î Áİ´Ï´Ù.
 ÀÌ¸§Àº CameraController.cs·Î ÇÏ°Ú½À´Ï´Ù.
 
-![Alt text](./image/Camera.png)
 ´ÙÀ½ÀÇ CodeµéÀ» ³Ö¾î ÁØ ´ÙÀ½¿¡
+```
+public class CameraController : MonoBehaviour
+{
+    public float follow_speed = 4.0f;
+    public float z = -20.0f;
+    public GameObject Target;
 
+    Transform this_transform;
+    Transform Target_transform;
+
+    void Start()
+    {
+        Target = GameObject.FindGameObjectWithTag("Player");
+        this_transform = GetComponent<Transform>();
+        Target_transform = Target.GetComponent<Transform>();
+    }
+    void Update()
+    {
+        this_transform.position = Vector2.Lerp(this_transform.position, Target_transform.position, follow_speed * Time.deltaTime);
+        this_transform.Translate(0, 0, z);
+    }
+}
+
+```
+
+![Alt text](./image/Camera.png)
 ¿ŞÂÊÀÇ Hierachy Ã¢¿¡ MainCamera¿¡ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
+Ãß°¡ÀûÀ¸·Î Size¸¦ ÁÙ¿©(2~3Á¤µµ) È­¸éÀ» È®´ëÇØ Áİ´Ï´Ù.
 
 ÀÌ¹ø¿¡µµ Play¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
 
@@ -152,11 +353,352 @@ ProjectÃ¢¿¡ ¿ìÅ¬¸¯À¸·Î Script¸¦ ¸¸µé¾î Áİ´Ï´Ù.
 ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍ¿¡°Ô HP¸¦ ¸¸µé¾î ÁÖ°í ±×°ÍÀ» º¸¿©ÁÙ HP¹Ù¸¦ ¸¸µé¾î º¸°Ú½À´Ï´Ù.
 Ãß°¡·Î ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍ°¡ ºÎµúÈ÷¸é ¼­·Î°¡ HP°¡ ´Şµµ·Ï ÇØº¸°Ú½À´Ï´Ù.
 
-¿ì¼± HP¸¦ ¸¸µé¾î ÁÖ±âÀ§ÇØ¼­ PlayerController¿Í MonsterController¿¡ ¾Æ·¡ÀÇ Code¸¦ Ãß°¡ÇØ Áİ´Ï´Ù.
+¿ì¼± HP¸¦ ¸¸µé¾î ÁÖ±âÀ§ÇØ¼­ PlayerController¿Í MonsterController¿¡ class ¼±¾ğ ¾Æ·¡¿¡ Code¸¦ Ãß°¡ÇØ Áİ´Ï´Ù.
+```
+    private float m_MaxHealth = 5.0f;//¿©±â´Â ¸¶À½´ë·Î Á¤ÇØÁÖ¼¼¿ä(ÇÃ·¹ÀÌ¾î´Â ³ôÀº°Ô ÁÁ°ÚÁÒ?)
+```
 
-´ÙÀ½ HealthController.cs Script¸¦ ¸¸µé¾î¼­ ´ÙÀ½ÀÇ CodeµéÀ» ³Ö¾îÁİ´Ï´Ù.
+´ÙÀ½ HealthBarController.cs Script¸¦ ¿­¾î¼­ ´ÙÀ½ÀÇ CodeµéÀ» ³Ö¾îÁİ´Ï´Ù.
+```
 
-´ÙÀ½ PrefabsÆú´õ¿¡ ÀÖ´Â HealthBar¸¦ Hierachy¿¡ ¿Å°ÜÁÖ°í Script¸¦ Ãß°¡ÇØ Áİ´Ï´Ù. ±×¸®°í HealthBar¸¦ Player³ª Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ¸·Î ¾Æ·¡ µé¾î°¡µµ·Ï ³Ö¾îÁİ´Ï´Ù.
-(HealthBar¸¦ µÎ°³ °¡Á®¿Í¼­ °¢°¢ ³Ö¾îÁÖ¸é µË´Ï´Ù.)
+public class HealthBarController : MonoBehaviour
+{
+    private Transform target = null;
+    private float m_health;
+    private float m_max_health;
+    private bool is_init = false;
+    private Transform bar = null;
+    // Start is called before the first frame update
+    void Start()
+    {
+        bar = this.transform.GetChild(0);
+        m_health = m_max_health;
+        target = this.transform.parent;
+    }
 
+    // Update is called once per frame
+    void Update()
+    {
+        bar.localScale = new Vector3(m_health / m_max_health, 1);
+        this.transform.position = new Vector3(target.position.x, target.position.y + 0.5f);
+
+    }
+    public void Damaged(float damage)
+    {
+        m_health -= damage;
+    }
+    public float getCurrentHealth()
+    {
+        return m_health;
+    }
+    public void setMaxHealth(float targetMaxHealth)
+    {
+        m_max_health = targetMaxHealth;
+        if (!is_init)
+            m_health = m_max_health;
+    }
+}
+
+```
+![Alt text](./image/HealthBar1.png)
+´ÙÀ½ PrefabsÆú´õ¿¡ ÀÖ´Â HealthBar¸¦ Hierachy¿¡ Player³ª Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ¸·Î ¾Æ·¡ µé¾î°¡µµ·Ï ³Ö¾îÁİ´Ï´Ù.
+(HealthBar¸¦ µÎ°³ °¡Á®¿Í¼­ °¢°¢ ³Ö¾îÁÖ¸é µË´Ï´Ù. + ¹Ù·Î ³Ö¾îÁÖ¼¼¿ä.)
+
+![Alt text](./image/HealthBar2.png)
+![Alt text](./image/HealthBar3.png)
+
+´ÙÀ½À¸·Î MonsterController¿Í PlayerController Class ¼±¾ğ ¹Ø¿¡
+```
+    private HealthBarController m_HealthController;
+```
+MonsterController´Â Start()¿¡ 
+![Alt text](./image/HealthBar4.png)
+```
+        this.m_HealthController = this.transform.GetChild(0).GetComponent<HealthBarController>();
+        this.m_HealthController.setMaxHealth(this.m_MaxHealth);
+```
+PlayerController´Â Start()¿¡ 
+![Alt text](./image/HealthBar5.png)
+```
+        this.m_HealthController = this.transform.GetChild(1).GetComponent<HealthBarController>();
+        this.m_HealthController.setMaxHealth(this.m_MaxHealth);
+```
+¸¦ ³Ö¾îÁİ´Ï´Ù. (StartÇÔ¼ö¿¡ ³Ö´Â ÄÚµåÀÇ Â÷ÀÌ´Â GetChile(¼ıÀÚ) »ÓÀÔ´Ï´Ù.
+
+
+![Alt text](./image/HealthBar6.png)
 ÀÌ¹ø¿¡µµ ¿ª½Ã Play¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
+
+### 7. ¸ó½ºÅÍ ·£´ı ½ºÆù ½ÃÅ°±â
+¸ó½ºÅÍ¸¦ ¸ÊÀÇ ·£´ı À§Ä¡¿¡¼­ »ı¼º½ÃÄÑ º¸°Ú½À´Ï´Ù.
+
+![Alt text](./image/Spawn1.png)
+¿ì¼± GameObject¸¦ ÇÏ³ª ¸¸µì´Ï´Ù.(Àú´Â SpawnManager¶ó°í ¸¸µé¾ú½À´Ï´Ù.)
+
+SpawnController.cs Script¸¦ ¸¸µé°í ´ÙÀ½ Code ¸¦ ³Ö¾îÁİ´Ï´Ù.
+
+```
+public class SpawnController : MonoBehaviour
+{
+    // Start is called before the first frame update
+    private int m_MonsterCount = 0;
+    private float m_SpawnVertical, m_SpawnHorizontal;
+    private float m_Distance = 5.0f;
+    public GameObject m_MonsterObject = null;
+    public int m_MaxMonsterCount = 1;
+
+    // Update is called once per frame
+    void Update()
+    {
+        this.m_SpawnHorizontal = Random.Range(-m_Distance, m_Distance);
+        this.m_SpawnVertical = Mathf.Sqrt(Mathf.Pow(this.m_Distance, 2.0f) - Mathf.Pow(this.m_SpawnHorizontal, 2.0f));
+        this.m_MonsterCount = this.transform.childCount;
+        if (m_MonsterCount < m_MaxMonsterCount)
+        {
+            GameObject.Instantiate(m_MonsterObject, new Vector3(this.m_SpawnHorizontal, this.m_SpawnVertical, -1.0f), new Quaternion(0, 0, 0, 0)).transform.parent = this.transform;
+        }
+    }
+}
+```
+
+![Alt text](./image/Spawn2.png)
+SpawnManger GameObject¿¡ µå·¡±× ¾Ø µå·ÓÀ¸·Î ³Ö¾î ÁÖ°í
+Monster ObjectºÎºĞ¿¡ Monster GameObject¸¦ ³Ö¾îÁİ´Ï´Ù.
+±×¸®°í ¿øÇÏ´Â ¸¸Å­ MonsterMaxCount¸¦ ³Ö¾îÁİ´Ï´Ù.
+
+### 8. Å¸°İ, ÇÇ°İ ±¸ÇöÇÏ±â
+Áö±İ±îÁö Àß µû¶ó¿Í ÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!
+¸¶Áö¸·À¸·Î Å¸°İ°ú ÇÇ°İÀ» ±¸ÇöÇØº¸µµ·Ï ÇÏ°Ú½À´Ï´Ù.
+¿ì¼± Player¿Í Monster¿¡°Ô add Component¸¦ ÅëÇØ BoxCollider2D¸¦ ³Ö¾îÁİ´Ï´Ù.
+±× ´ÙÀ½ Edit Collider¸¦ ´­·¯ Ä³¸¯ÅÍ Å©±â¿¡ ¸Â°Ô ColliderÅ©±â¸¦ Á¶ÀıÇØ Áİ´Ï´Ù.
+´ÙÀ½À¸·Î RigidBody2DÀÇ Constraints¸¦ ´­·¯¼­ Freeze Rotation Z¸¦ Ã¼Å©ÇØÁİ´Ï´Ù.
+
+´ÙÀ½ MonsterController¿¡ ¾Æ·¡ÀÇ CodeµéÀ» Ãß°¡ÇØÁİ´Ï´Ù.
+```
+    private void OnCollisionEnter2D(Collision2D Collider)
+    {
+        if (Collider.transform.tag == "Player" || Collider.transform.tag == "Bullet")
+        {
+            this.m_HealthController.Damaged(1.0f);
+
+            if (this.m_HealthController.getCurrentHealth() <= 0)
+            {
+                this.Dead();
+            }
+            this.KnockBack(Collider);
+        }
+    }
+    void Dead()
+    {
+        Destroy(this.gameObject);
+    }
+    void KnockBack(Collision2D target)
+    {
+        this.transform.position -= (target.transform.position - this.transform.position) * 30 * Time.deltaTime;
+    }
+```
+±×¸®°í PlayerController.cs ´Â
+
+```
+public class PlayerController : MonoBehaviour
+{
+    public float m_MoveSpeed;
+
+    private float hori, vert, m_MaxHealth = 100.0f;
+    private Rigidbody2D m_Rigidbody = null;
+    private Animator m_Animator = null;
+    private SpriteRenderer m_SpriteRenderer = null;
+    private bool m_isright = true;
+    private Vector2 m_ForceUpdate = Vector2.zero;
+    private HealthBarController m_HealthController;
+    private Transform m_ChildTransform;
+    private GunController m_GunController;
+    void Start()
+    {
+        this.m_Rigidbody = this.GetComponent<Rigidbody2D>();
+        this.m_HealthController = this.transform.GetChild(1).GetComponent<HealthBarController>();
+        this.m_ChildTransform = this.transform.GetChild(0);
+        this.m_Animator = m_ChildTransform.GetComponent<Animator>();
+        this.m_SpriteRenderer = m_ChildTransform.GetComponent<SpriteRenderer>();
+        this.m_HealthController.setMaxHealth(m_MaxHealth);
+        this.m_GunController = this.transform.GetChild(2).GetComponent<GunController>();
+    }
+
+    void Update()
+    {
+        hori = Input.GetAxisRaw("Horizontal");
+        vert = Input.GetAxisRaw("Vertical");
+        this.UpdateAnimations();
+        if (Input.GetKeyDown("space"))
+            this.m_GunController.shoot();
+    }
+
+    void FixedUpdate()
+    {
+        this.m_Rigidbody.velocity = new Vector2(hori, vert) * m_MoveSpeed;
+    }
+    private void UpdateAnimations()
+    {
+        Vector3 dir = m_ChildTransform.localScale;
+        if (vert > 0.0f)
+            this.SetBool("up", true);
+
+        else if (vert < -0.0f)
+            this.SetBool("down", true);
+
+        else
+        {
+            this.SetBool("up", false);
+            this.SetBool("down", false);
+        }
+
+        if (hori > 0.0f)
+        {
+            this.SetBool("side", true);
+            if (!this.m_isright)
+            {
+                this.m_ChildTransform.localScale = new Vector3(-1 * dir.x, dir.y);
+                this.m_isright = true;
+            }
+        }
+        else if (hori < -0.0f)
+        {
+            this.SetBool("side", true);
+            if (this.m_isright)
+            {
+                this.m_ChildTransform.localScale = new Vector3(-1 * dir.x, dir.y);
+                this.m_isright = false;
+            }
+        }
+        else
+            this.SetBool("side", false);
+    }
+
+    private void SetBool(string Name, bool Value)
+    {
+        this.m_Animator.SetBool(Name, Value);
+    }
+
+    private void OnCollisionEnter2D(Collision2D Collider)
+    {
+        if (Collider.transform.tag == "Monster")
+        {
+            this.m_HealthController.Damaged(1.0f);
+            if (this.m_HealthController.getCurrentHealth() <= 0)
+                this.Dead();
+        }
+    }
+
+    private void Dead()
+    {
+        Destroy(this.gameObject);
+    }
+
+    public int getDir()
+    {
+        if (this.m_Animator.GetBool("up"))
+        {
+            if (this.m_Animator.GetBool("side"))
+                return 1;
+            else
+                return 4;
+        }
+        else if (this.m_Animator.GetBool("down"))
+        {
+            if (this.m_Animator.GetBool("side"))
+                return 0;
+            else
+                return 2;
+        }
+        else
+            return 3;
+    }
+    public Vector3 getDirection()
+    {
+        return new Vector3(hori, vert, 0);
+    }
+}
+```
+ÀÌ·¸°Ô ¼öÁ¤ÇØ Áİ´Ï´Ù. (±×´ë·Î º¹»ç ºÙ¿©³Ö±â¸¦ ÇÏ¼Åµµ µË´Ï´Ù.
+
+±×¸®°í
+GameObject¸¦ ¸¸µé¾î¼­ GunÀÌ¶ó´Â ÀÌ¸§À¸·Î ¸¸µé¾îÁØ ÈÄ
+GunController.cs¸¦ ¸¸µé¾î ´ÙÀ½ÀÇ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
+```
+
+public class GunController : MonoBehaviour
+{
+    public Sprite[] Gun;
+    private PlayerController m_PlayerController;
+    private SpriteRenderer m_SpriteRenderer;
+    public GameObject Bullet;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.m_PlayerController = this.transform.parent.GetComponent<PlayerController>();
+        this.m_SpriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        int dir = this.m_PlayerController.getDir();
+        this.m_SpriteRenderer.sprite = this.Gun[dir];
+
+    }
+
+    public void shoot()
+    {
+        Instantiate(Bullet, this.transform.parent.position, new Quaternion(0, 0, 0, 0));
+    }
+}
+```
+![Alt text](./image/Collider2.png)
+Gun Object¿¡ Script¿Í Sprite Renderer¸¦ ³Ö°í ´ÙÀ½°ú °°ÀÌ ¼³Á¤ÇØÁİ´Ï´Ù.
+bulletÀº prefabsÆú´õ¿¡ ÀÖ°í,
+°¢ ÀÌ¹ÌÁöµéÀº topdown_shooter/guns/mg¿¡ ÀÖ½À´Ï´Ù.
+´ÙÀ½À¸·Î BulletController.cs¸¦ ¿­¾î¼­ ´ÙÀ½ÀÇ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
+```
+
+public class BulletController : MonoBehaviour
+{
+    private float m_livetime;
+    private Vector2 dir;
+    public float m_BulletSpeed = 1.0f;
+    private PlayerController m_PlayerController;
+    // Start is called before the first frame update
+    void Start()
+    {
+        m_PlayerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        m_livetime = 0.0f;
+        dir = m_PlayerController.getDirection();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(dir * m_BulletSpeed * Time.deltaTime);
+        m_livetime += Time.deltaTime;
+        if (m_livetime > 5.0f ||dir == new Vector2(0, 0))
+            Destroy(this.gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D Collider)
+    {
+        if (Collider.transform.tag == "Monster")
+            Destroy(this.gameObject);
+    }
+}
+```
+
+![Alt text](./image/Collider3.png)
+Gun Object¸¦ Player¿¡ ³Ö¾îÁÖ°í °¡Àå ¾Æ·¡ À§Ä¡ÇÏµµ·Ï
+InspectorÃ¢ÀÇ PositionÀ» Ä³¸¯ÅÍ°¡ µé°í ÀÖ´Â °ÍÃ³·³ Àß ¸ÂÃçÁÖ½Ã¸é µË´Ï´Ù!
+
+![Alt text](./image/Collider4.png)
+![Alt text](./image/Collider5.png)
+¸¶Áö¸·À¸·Î Monster¿ÀºêÁ§Æ®¸¦ PrefabsÆú´õ·Î µå·¡±× ÇØÁØ µÚ hieracht¿¡¼­ ¾ø¾Ö°í SpawnManagerÀÇ Script¿¡ PrefabsÆú´õÀÇ Monster¸¦ ³Ö¾îÁÖ½Ã¸é µË´Ï´Ù!
+
+
+![Alt text](./image/Collider6.png)
+±×·¯¸é ¿Ï¼ºÀÔ´Ï´Ù!
