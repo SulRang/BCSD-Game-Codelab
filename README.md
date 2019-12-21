@@ -1,9 +1,9 @@
 
 # BCSD-Game-Codelab
-?BCSD Game Codelab ÀÔ´Ï´Ù.
-Unity¸¦ ÀÌ¿ëÇÏ¿© °£´ÜÇÑ °ÔÀÓÀ» Á¦ÀÛÇØº¸´Â ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
-ÀÌ¸¦ ÅëÇØ¼­ °ÔÀÓ Á¦ÀÛ¿¡ Èï¹Ì¸¦ °¡Áö°Ô µÇ¼ÌÀ¸¸é ÁÁ°Ú½À´Ï´Ù!
-## ¸ñÂ÷
+BCSD Game Codelab ì…ë‹ˆë‹¤.  
+Unityë¥¼ ì´ìš©í•˜ì—¬ ê°„ë‹¨í•œ ê²Œì„ì„ ì œì‘í•´ë³´ëŠ” í”„ë¡œì íŠ¸ì…ë‹ˆë‹¤.  
+ì´ë¥¼ í†µí•´ì„œ ê²Œì„ ì œì‘ì— í¥ë¯¸ë¥¼ ê°€ì§€ê²Œ ë˜ì…¨ìœ¼ë©´ ì¢‹ê² ìŠµë‹ˆë‹¤!  
+## ëª©ì°¨
 1. install unity
 0. add project
 0. make player move
@@ -15,88 +15,88 @@ Unity¸¦ ÀÌ¿ëÇÏ¿© °£´ÜÇÑ °ÔÀÓÀ» Á¦ÀÛÇØº¸´Â ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
 0. spawn system
 0. attack and hit system
 
-## °³¹ß È¯°æ ÁØºñ
-### 1. Unity ¼³Ä¡
+## ê°œë°œ í™˜ê²½ ì¤€ë¹„
+### 1. Unity ì„¤ì¹˜
 <https://unity3d.com/kr/get-unity/download>
-À§ »çÀÌÆ®¿¡ µé¾î°©´Ï´Ù.
+ìœ„ ì‚¬ì´íŠ¸ì— ë“¤ì–´ê°‘ë‹ˆë‹¤.
 
 ![Alt text](./image/unityinstall1.png)
-Unity Hub ´Ù¿î·Îµå ´Ù Å¬¸¯
-(**Unity Hub** ´Â ¿©·¯ ¹öÀüÀÇ **Unity**¸¦ º¸´Ù ÆíÇÏ°Ô »ç¿ëÇÒ ¼ö ÀÖµµ·Ï µµ¿ÍÁÖ´Â **°ü¸® Åø**ÀÔ´Ï´Ù.)
+Unity Hub ë‹¤ìš´ë¡œë“œ ë‹¤ í´ë¦­
+(**Unity Hub** ëŠ” ì—¬ëŸ¬ ë²„ì „ì˜ **Unity**ë¥¼ ë³´ë‹¤ í¸í•˜ê²Œ ì‚¬ìš©í•  ìˆ˜ ìˆë„ë¡ ë„ì™€ì£¼ëŠ” **ê´€ë¦¬ íˆ´**ì…ë‹ˆë‹¤.)
 
 ![Alt text](./image/unityinstall2.png)
-µ¿ÀÇ Å¬¸¯
+ë™ì˜ í´ë¦­
 
 ![Alt text](./image/unityinstall3.png)
-¼³Ä¡ Å¬¸¯
+ì„¤ì¹˜ í´ë¦­
 
 ![Alt text](./image/unityinstall4.png)
-Ã¼Å©¸¦ ÇÑÈÄ ¸¶Ä§À» ´­·¯ Unity Hub ½ÇÇà
+ì²´í¬ë¥¼ í•œí›„ ë§ˆì¹¨ì„ ëˆŒëŸ¬ Unity Hub ì‹¤í–‰
 
 ![Alt text](./image/Unity1.png)
-¿ŞÂÊÀÇ ¼³Ä¡ ÅÇÀ» ´­·¯ ÀÌµ¿ÇÑ µÚ ¿À¸¥ÂÊ »ó´ÜÀÇ Ãß°¡¸¦ ´­·¯Áİ´Ï´Ù.
+ì™¼ìª½ì˜ ì„¤ì¹˜ íƒ­ì„ ëˆŒëŸ¬ ì´ë™í•œ ë’¤ ì˜¤ë¥¸ìª½ ìƒë‹¨ì˜ ì¶”ê°€ë¥¼ ëˆŒëŸ¬ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Unity2.png)
-Unity 2018.4.14f1 (LTS)¸¦ Ã¼Å©ÇÑ ÈÄ ´ÙÀ½À» ´­·¯ ÁøÇàÇÕ´Ï´Ù.
+Unity 2018.4.14f1 (LTS)ë¥¼ ì²´í¬í•œ í›„ ë‹¤ìŒì„ ëˆŒëŸ¬ ì§„í–‰í•©ë‹ˆë‹¤.
 
 ![Alt text](./image/Unity3.png)
-Android Build Support¸¦ Ã¼Å©ÇÑ ÈÄ ¿Ï·á¸¦ ´­·¯ ¼³Ä¡¸¦ ÁøÇàÇÕ´Ï´Ù.
+Android Build Supportë¥¼ ì²´í¬í•œ í›„ ì™„ë£Œë¥¼ ëˆŒëŸ¬ ì„¤ì¹˜ë¥¼ ì§„í–‰í•©ë‹ˆë‹¤.
 
 ![Alt text](./image/Unity4.png)
-¼³Ä¡°¡ ¿Ï·á µÉ ¶§±îÁö ±â´Ù·ÁÁİ´Ï´Ù...
+ì„¤ì¹˜ê°€ ì™„ë£Œ ë  ë•Œê¹Œì§€ ê¸°ë‹¤ë ¤ì¤ë‹ˆë‹¤...
 
-### 2. ÇÁ·ÎÁ§Æ® »ı¼º
+### 2. í”„ë¡œì íŠ¸ ìƒì„±
 
-ÇÁ·ÎÁ§Æ® »ı¼º ÅÇÀ¸·Î ÀÌµ¿ÇØÁİ´Ï´Ù.
+í”„ë¡œì íŠ¸ ìƒì„± íƒ­ìœ¼ë¡œ ì´ë™í•´ì¤ë‹ˆë‹¤.
 
 
 ![Alt text](./image/Project0.png)
 ![Alt text](./image/Project1.png)
-Ãß°¡¸¦ ´©¸¥ µÚ CloneÇÑ Æú´õ¸¦ ¼±ÅÃÇØ Áİ´Ï´Ù.
+ì¶”ê°€ë¥¼ ëˆ„ë¥¸ ë’¤ Cloneí•œ í´ë”ë¥¼ ì„ íƒí•´ ì¤ë‹ˆë‹¤.
 
-ÀÚ ±×·³ ÀÌÁ¦ º»°İÀûÀ¸·Î ÇÁ·ÎÁ§Æ®¸¦ ÁøÇàÇØº¸°Ú½À´Ï´Ù!
+ì ê·¸ëŸ¼ ì´ì œ ë³¸ê²©ì ìœ¼ë¡œ í”„ë¡œì íŠ¸ë¥¼ ì§„í–‰í•´ë³´ê² ìŠµë‹ˆë‹¤!
 
-## ÇÁ·ÎÁ§Æ® °³¹ß
+## í”„ë¡œì íŠ¸ ê°œë°œ
 
-### 0. À¯´ÏÆ¼ ¿£Áø
+### 0. ìœ ë‹ˆí‹° ì—”ì§„
 
 
 ![UnityEngine](./image/UnityEngine.png)
-¿ŞÂÊ¿¡ hierarchy¶ó°í ½áÀÖ´Â Ã¢Àº °ÔÀÓÀ» ±¸¼ºÇÏ´Â ¿ä¼ÒµéÀÌ ³ªÅ¸³ª´Â Ã¢ÀÔ´Ï´Ù. ÀúÈñ°¡ È­¸é¿¡ ¹«¾ùÀÎ°¡¸¦ º¸ÀÌ°í ½Í´Ù°í ÇÒ ¶§ ÀÌ°÷¿¡ ¸¸µé¾î¼­ º¸ÀÌ°Ô ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ì™¼ìª½ì— hierarchyë¼ê³  ì¨ìˆëŠ” ì°½ì€ ê²Œì„ì„ êµ¬ì„±í•˜ëŠ” ìš”ì†Œë“¤ì´ ë‚˜íƒ€ë‚˜ëŠ” ì°½ì…ë‹ˆë‹¤. ì €í¬ê°€ í™”ë©´ì— ë¬´ì—‡ì¸ê°€ë¥¼ ë³´ì´ê³  ì‹¶ë‹¤ê³  í•  ë•Œ ì´ê³³ì— ë§Œë“¤ì–´ì„œ ë³´ì´ê²Œ í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 
-ÇÏ´ÜÀÇ Project´Â ´Ü¼øÇÑ ExplorerÀÔ´Ï´Ù. ÀÌ°÷¿¡¼­ ÀúÈñ°¡ ¸¸µç Script³ª ImageµîÀ» °¡Á®¿Í¼­ Hierachy¿¡ µå·¡±×ÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.
+í•˜ë‹¨ì˜ ProjectëŠ” ë‹¨ìˆœí•œ Explorerì…ë‹ˆë‹¤. ì´ê³³ì—ì„œ ì €í¬ê°€ ë§Œë“  Scriptë‚˜ Imageë“±ì„ ê°€ì ¸ì™€ì„œ Hierachyì— ë“œë˜ê·¸í•´ì„œ ì‚¬ìš©í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 
-¿À¸¥ÂÊÀÇ InspectorÃ¢Àº ÀúÈñ°¡ ¸¶¿ì½º·Î Å¬¸¯ÇÑ °ÍÀÇ »ó¼¼ÇÑ Á¤º¸¸¦ ¾Ë·ÁÁÖ´Â Ã¢ÀÔ´Ï´Ù. ÀÌ°÷¿¡ ³ª¿À´Â Á¤º¸¸¦ ¼öÁ¤ÇÏ¿©¼­ ÀúÈñ°¡ ¿øÇÏ´Â ±â´ÉÀ» ±¸ÇöÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ì˜¤ë¥¸ìª½ì˜ Inspectorì°½ì€ ì €í¬ê°€ ë§ˆìš°ìŠ¤ë¡œ í´ë¦­í•œ ê²ƒì˜ ìƒì„¸í•œ ì •ë³´ë¥¼ ì•Œë ¤ì£¼ëŠ” ì°½ì…ë‹ˆë‹¤. ì´ê³³ì— ë‚˜ì˜¤ëŠ” ì •ë³´ë¥¼ ìˆ˜ì •í•˜ì—¬ì„œ ì €í¬ê°€ ì›í•˜ëŠ” ê¸°ëŠ¥ì„ êµ¬í˜„í•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.
 
-°¡¿îµ¥ÀÇ Ã¢¿¡´Â **Scene**°ú **Game**ÀÌ ÀÖ½À´Ï´Ù.
-¿©±â¼­ **Scene**Àº ÀúÈñ°¡ Á¶ÀÛÇÒ È­¸éÀÔ´Ï´Ù. Ä³¸¯ÅÍ¸¦ ³õ°í ¹è°æÈ­¸éÀ» ³õ´Â µîÀÇ º¸¿©Áö´Â ÀÛ¾÷À» ÁøÇàÇÒ È­¸éÀÔ´Ï´Ù.
-**Game**Àº °ÔÀÓÀ» ½ÇÇàÇßÀ» ¶§ÀÇ ¸ğ½ÀÀ» º¸¿©ÁÖ´Â È­¸éÀÔ´Ï´Ù. °¡¿îµ¥ »ó´ÜÀ» º¸¸é ¿À¸¥ÂÊ »ï°¢Çü ¹öÆ°ÀÌ ÀÖ´Âµ¥ ÀÌ ¹öÆ°À» ´©¸£¸é GameÈ­¸é¿¡¼­ ÀúÈñ°¡ ¸¸µç °ÔÀÓÀ» Å×½ºÆ® ÇØº¼ ¼ö ÀÖ½À´Ï´Ù
+ê°€ìš´ë°ì˜ ì°½ì—ëŠ” **Scene**ê³¼ **Game**ì´ ìˆìŠµë‹ˆë‹¤.
+ì—¬ê¸°ì„œ **Scene**ì€ ì €í¬ê°€ ì¡°ì‘í•  í™”ë©´ì…ë‹ˆë‹¤. ìºë¦­í„°ë¥¼ ë†“ê³  ë°°ê²½í™”ë©´ì„ ë†“ëŠ” ë“±ì˜ ë³´ì—¬ì§€ëŠ” ì‘ì—…ì„ ì§„í–‰í•  í™”ë©´ì…ë‹ˆë‹¤.
+**Game**ì€ ê²Œì„ì„ ì‹¤í–‰í–ˆì„ ë•Œì˜ ëª¨ìŠµì„ ë³´ì—¬ì£¼ëŠ” í™”ë©´ì…ë‹ˆë‹¤. ê°€ìš´ë° ìƒë‹¨ì„ ë³´ë©´ ì˜¤ë¥¸ìª½ ì‚¼ê°í˜• ë²„íŠ¼ì´ ìˆëŠ”ë° ì´ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ Gameí™”ë©´ì—ì„œ ì €í¬ê°€ ë§Œë“  ê²Œì„ì„ í…ŒìŠ¤íŠ¸ í•´ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤
 
-### 1. ÇÃ·¹ÀÌ¾î »ı¼º ¹× ¿òÁ÷ÀÌ±â
-Ã³À½À¸·Î ÇÃ·¹ÀÌ¾î¸¦ »ı¼ºÇØ¼­ ¿òÁ÷¿© º¸µµ·ÏÇÏÁÒ.
+### 1. í”Œë ˆì´ì–´ ìƒì„± ë° ì›€ì§ì´ê¸°
+ì²˜ìŒìœ¼ë¡œ í”Œë ˆì´ì–´ë¥¼ ìƒì„±í•´ì„œ ì›€ì§ì—¬ ë³´ë„ë¡í•˜ì£ .
 
 ![Alt text](./image/Player1.png)
-¿ŞÂÊ hierarchyÃ¢¿¡ ¿ìÅ¬¸¯À» ÇÑ µÚ Create Empty ¸¦ Å¬¸¯ÇÏ¿© ¿ÀºêÁ§Æ®¸¦ »ı¼ºÇØÁİ´Ï´Ù.
-(**¿ÀºêÁ§Æ®**´Â ¿©·¯ ±â´ÉµéÀ» ¸ğ¾Æ¼­ °¡Áú ¼ö ÀÖ´Â °´Ã¼ÀÔ´Ï´Ù.)
+ì™¼ìª½ hierarchyì°½ì— ìš°í´ë¦­ì„ í•œ ë’¤ Create Empty ë¥¼ í´ë¦­í•˜ì—¬ ì˜¤ë¸Œì íŠ¸ë¥¼ ìƒì„±í•´ì¤ë‹ˆë‹¤.
+(**ì˜¤ë¸Œì íŠ¸**ëŠ” ì—¬ëŸ¬ ê¸°ëŠ¥ë“¤ì„ ëª¨ì•„ì„œ ê°€ì§ˆ ìˆ˜ ìˆëŠ” ê°ì²´ì…ë‹ˆë‹¤.)
 
 ![Alt text](./image/Player2.png)
-¿À¸¥ÂÊ InspectorÃ¢ÀÇ »ó´Ü¿¡ ÀÖ´Â ÀÌ¸§À» Player·Î ¹Ù²Ù°í ±× ¹Ø¿¡ ÀÖ´Â Tagµµ Player·Î ¹Ù²ãÁİ´Ï´Ù.
-(**Tag**´Â ÇØ´ç **¿ÀºêÁ§Æ®°¡ ¹«¾ùÀÎÁö È®ÀÎ**  ¶Ç´Â ÇØ´ç **¿ÀºêÁ§Æ®¸¦ Ã£±â** À§ÇÑ ¿ëµµ·Î ¾²ÀÔ´Ï´Ù.)
+ì˜¤ë¥¸ìª½ Inspectorì°½ì˜ ìƒë‹¨ì— ìˆëŠ” ì´ë¦„ì„ Playerë¡œ ë°”ê¾¸ê³  ê·¸ ë°‘ì— ìˆëŠ” Tagë„ Playerë¡œ ë°”ê¿”ì¤ë‹ˆë‹¤.
+(**Tag**ëŠ” í•´ë‹¹ **ì˜¤ë¸Œì íŠ¸ê°€ ë¬´ì—‡ì¸ì§€ í™•ì¸**  ë˜ëŠ” í•´ë‹¹ **ì˜¤ë¸Œì íŠ¸ë¥¼ ì°¾ê¸°** ìœ„í•œ ìš©ë„ë¡œ ì“°ì…ë‹ˆë‹¤.)
 
 ![Alt text](./image/Player3.png)
 ![Alt text](./image/Player4.png)
-±× ÈÄ ResourcesÆú´õ¿¡ topdown_shooter/charater¿¡ ÀÖ´Â 2¸¦ µå·¡±× ¾Ø µå·ÓÀ¸·Î Player¿¡°Ô ³Ö¾îÁİ´Ï´Ù.
+ê·¸ í›„ Resourcesí´ë”ì— topdown_shooter/charaterì— ìˆëŠ” 2ë¥¼ ë“œë˜ê·¸ ì•¤ ë“œë¡­ìœ¼ë¡œ Playerì—ê²Œ ë„£ì–´ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Player5.png)
-´ÙÀ½Àº ÇÏ´ÜÀÇ ProjectÃ¢À¸·Î ³Ñ¾î°¡ º¸°Ú½À´Ï´Ù.
-ProjcetÃ¢¿¡ Scripts Æú´õ·Î ÀÌµ¿ÇÕ´Ï´Ù.
-(µû·Î Æú´õ¸¦ ¸¸µå¼Åµµ µË´Ï´Ù.)
+ë‹¤ìŒì€ í•˜ë‹¨ì˜ Projectì°½ìœ¼ë¡œ ë„˜ì–´ê°€ ë³´ê² ìŠµë‹ˆë‹¤.
+Projcetì°½ì— Scripts í´ë”ë¡œ ì´ë™í•©ë‹ˆë‹¤.
+(ë”°ë¡œ í´ë”ë¥¼ ë§Œë“œì…”ë„ ë©ë‹ˆë‹¤.)
 
 ![Alt text](./image/Player6.png)
-¿ìÅ¬¸¯À» ÇÑµÚ Script»ı¼ºÀ» ´­·¯ PlayerController.cs ¶ó´Â ÆÄÀÏÀ» ¸¸µì´Ï´Ù.
+ìš°í´ë¦­ì„ í•œë’¤ Scriptìƒì„±ì„ ëˆŒëŸ¬ PlayerController.cs ë¼ëŠ” íŒŒì¼ì„ ë§Œë“­ë‹ˆë‹¤.
 
 
-ÆÄÀÏÀ» ¿­¾î¼­ ¾Æ·¡ÀÇ CodeµéÀ» ³Ö¾îÁİ´Ï´Ù.
+íŒŒì¼ì„ ì—´ì–´ì„œ ì•„ë˜ì˜ Codeë“¤ì„ ë„£ì–´ì¤ë‹ˆë‹¤.
 ![Alt text](./image/Player7.png)
 ``` 
 public class PlayerController : MonoBehaviour
@@ -123,33 +123,33 @@ public class PlayerController : MonoBehaviour
     }
 }
 ```
-´Ù½Ã ¾Æ±î ¸¸µç Player GameObject·Î °¡¼­ ¹æ±İ ÀÛ¾÷ÇÑ Script¸¦ µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ ³Ö¾îÁİ´Ï´Ù.
+ë‹¤ì‹œ ì•„ê¹Œ ë§Œë“  Player GameObjectë¡œ ê°€ì„œ ë°©ê¸ˆ ì‘ì—…í•œ Scriptë¥¼ ë“œë˜ê·¸ ì•¤ ë“œë¡­ì„ í†µí•´ ë„£ì–´ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Player8.png)
-InspectorÃ¢¿¡ º¸¸é Script°¡ º¸ÀÏÅÙµ¥ ÀÌ°÷¿¡ ³ª¿À´Â Move Speed¿¡ ¿øÇÏ´Â Speed¸¦ ³Ö¾îÁİ´Ï´Ù.
+Inspectorì°½ì— ë³´ë©´ Scriptê°€ ë³´ì¼í…ë° ì´ê³³ì— ë‚˜ì˜¤ëŠ” Move Speedì— ì›í•˜ëŠ” Speedë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Player9.png)
-ÇÃ·¹ÀÌ¾î°¡ ³Ê¹« ÀÛÀ¸´Ï±î ScaleÀ» ¹Ù²ã ÁÖÁÒ. (InspectorÃ¢¿¡ Transform¿¡ ÀÖ½À´Ï´Ù.)
+í”Œë ˆì´ì–´ê°€ ë„ˆë¬´ ì‘ìœ¼ë‹ˆê¹Œ Scaleì„ ë°”ê¿” ì£¼ì£ . (Inspectorì°½ì— Transformì— ìˆìŠµë‹ˆë‹¤.)
 
 ![Alt text](./image/Player10.png)
-´ÙÀ½À¸·Î´Â Add Component¸¦ ´­·¯¼­ RigidBody2D¸¦ ³Ö¾îÁİ´Ï´Ù.
+ë‹¤ìŒìœ¼ë¡œëŠ” Add Componentë¥¼ ëˆŒëŸ¬ì„œ RigidBody2Dë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Player11.png)
-±×¸®°í Body TypeÀ» KinematicÀ¸·Î ¹Ù²ãÁİ´Ï´Ù.
+ê·¸ë¦¬ê³  Body Typeì„ Kinematicìœ¼ë¡œ ë°”ê¿”ì¤ë‹ˆë‹¤.
 
-±×·³ ÇÃ·¹ÀÌ ¹öÆ°À» ´©¸¥ ÈÄ ¹æÇâÅ°¸¦ ÅëÇØ ¿òÁ÷¿© º¾½Ã´Ù.
-(ÇÃ·¹ÀÌ ¹öÆ°Àº »ó´Ü Áß¾Ó¿¡ ÀÖ½À´Ï´Ù. [¿À¸¥ÂÊ »ï°¢Çü])
+ê·¸ëŸ¼ í”Œë ˆì´ ë²„íŠ¼ì„ ëˆ„ë¥¸ í›„ ë°©í–¥í‚¤ë¥¼ í†µí•´ ì›€ì§ì—¬ ë´…ì‹œë‹¤.
+(í”Œë ˆì´ ë²„íŠ¼ì€ ìƒë‹¨ ì¤‘ì•™ì— ìˆìŠµë‹ˆë‹¤. [ì˜¤ë¥¸ìª½ ì‚¼ê°í˜•])
 
-### 2. ÇÃ·¹ÀÌ¾î ¾Ö´Ï¸ŞÀÌ¼Ç ³Ö±â
+### 2. í”Œë ˆì´ì–´ ì• ë‹ˆë©”ì´ì…˜ ë„£ê¸°
 ![Alt text](./image/Animation1.png)
-ProjectÃ¢¿¡ ¾Æ±î character·Î °¡¼­ animations Æú´õ¿¡ ÀÖ´Â PlayerAnimationÀ» ¾Æ±î ³ÖÀº ÀÌ¹ÌÁö¿¡ µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
+Projectì°½ì— ì•„ê¹Œ characterë¡œ ê°€ì„œ animations í´ë”ì— ìˆëŠ” PlayerAnimationì„ ì•„ê¹Œ ë„£ì€ ì´ë¯¸ì§€ì— ë“œë˜ê·¸ ì•¤ ë“œë¡­ì„ í†µí•´ ì¶”ê°€í•´ ì¤ë‹ˆë‹¤.
 
 ![Alt text](./image/Animation2.png)
 ![Alt text](./image/Animation3.png)
 ![Alt text](./image/Animation4.png)
 ![Alt text](./image/Animation5.png)
 ![Alt text](./image/Animation6.png)
-PlayerController.cs¸¦ ´ÙÀ½°ú °°ÀÌ º¯°æÇØ Áİ´Ï´Ù.
+PlayerController.csë¥¼ ë‹¤ìŒê³¼ ê°™ì´ ë³€ê²½í•´ ì¤ë‹ˆë‹¤.
 ```
 public class PlayerController : MonoBehaviour
 {
@@ -230,24 +230,24 @@ public class PlayerController : MonoBehaviour
 
 ```
 
-### 3. ¸ó½ºÅÍ »ı¼º ¹× ¿òÁ÷ÀÌ±â
-ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î¸¦ µû¶ó´Ù´Ï´Â ¸ó½ºÅÍ¸¦ Ãß°¡ÇØ º¸°Ú½À´Ï´Ù.
+### 3. ëª¬ìŠ¤í„° ìƒì„± ë° ì›€ì§ì´ê¸°
+ì´ë²ˆì—ëŠ” í”Œë ˆì´ì–´ë¥¼ ë”°ë¼ë‹¤ë‹ˆëŠ” ëª¬ìŠ¤í„°ë¥¼ ì¶”ê°€í•´ ë³´ê² ìŠµë‹ˆë‹¤.
 
 ![Alt text](./image/Monster1.png)
-¸ÕÀú Create Empty¸¦ ÇÑ ÈÄ ÀÌ¸§°ú tag¸¦ Monster·Î ¹Ù²ãÁİ´Ï´Ù.
-RigidBody2D¸¦ Ãß°¡ÇÏ°í Gravity ScaleÀ» 0À¸·Î ¼³Á¤ÇØÁİ´Ï´Ù.
-(Body TypeÀº Dynamic)
-(ÀÚ¼¼ÇÑ ¼³¸íÀº 1¿¡ ÀÖ½À´Ï´Ù.)
+ë¨¼ì € Create Emptyë¥¼ í•œ í›„ ì´ë¦„ê³¼ tagë¥¼ Monsterë¡œ ë°”ê¿”ì¤ë‹ˆë‹¤.
+RigidBody2Dë¥¼ ì¶”ê°€í•˜ê³  Gravity Scaleì„ 0ìœ¼ë¡œ ì„¤ì •í•´ì¤ë‹ˆë‹¤.
+(Body Typeì€ Dynamic)
+(ìì„¸í•œ ì„¤ëª…ì€ 1ì— ìˆìŠµë‹ˆë‹¤.)
 
 
 ![Alt text](./image/Monster2.png)
-add Component·Î Sprite Renderer¸¦
-Ãß°¡ÇÑ´ÙÀ½ MonsterÆú´õ¿¡ ÀÖ´Â SlimeÀÌ¹ÌÁö¸¦  Sprite¿¡ µå·¡±× ¾Ø µå·ÓÀ¸·Î Ãß°¡ÇØ Áİ´Ï´Ù.
-(Àß º¸ÀÌµµ·Ï ScaleÀ» Á¶Á¤ÇØ Áİ´Ï´Ù.)
+add Componentë¡œ Sprite Rendererë¥¼
+ì¶”ê°€í•œë‹¤ìŒ Monsterí´ë”ì— ìˆëŠ” Slimeì´ë¯¸ì§€ë¥¼  Spriteì— ë“œë˜ê·¸ ì•¤ ë“œë¡­ìœ¼ë¡œ ì¶”ê°€í•´ ì¤ë‹ˆë‹¤.
+(ì˜ ë³´ì´ë„ë¡ Scaleì„ ì¡°ì •í•´ ì¤ë‹ˆë‹¤.)
 
-MonsterController.cs ½ºÅ©¸³Æ®¸¦ ¸¸µç ÈÄ
-´ÙÀ½ÀÇ CodeµéÀ» ÀÛ¼ºÇØ Áİ´Ï´Ù.
-Monster GameObject¿¡ Script¸¦ Ãß°¡ÇÑ ÈÄ Play¹öÆ°À» ÅëÇØ È®ÀÎÇØ º¾´Ï´Ù.
+MonsterController.cs ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë§Œë“  í›„
+ë‹¤ìŒì˜ Codeë“¤ì„ ì‘ì„±í•´ ì¤ë‹ˆë‹¤.
+Monster GameObjectì— Scriptë¥¼ ì¶”ê°€í•œ í›„ Playë²„íŠ¼ì„ í†µí•´ í™•ì¸í•´ ë´…ë‹ˆë‹¤.
 ```
 
 public class MonsterController : MonoBehaviour
@@ -279,11 +279,11 @@ public class MonsterController : MonoBehaviour
 ```
 
 ![Alt text](./image/Monster3.png)
-Àß ¿òÁ÷ÀÎ´Ù¸é ´ÙÀ½Àº Monster¿¡°Ô AnimationÀ» ³Ö¾îÁÖ°Ú½À´Ï´Ù.
-Project Ã¢¿¡¼­ MonsterAnimation(slime1_front)À» Ã£¾Æ¼­ Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ» ÅëÇØ Ãß°¡ÇØ Áİ´Ï´Ù.
+ì˜ ì›€ì§ì¸ë‹¤ë©´ ë‹¤ìŒì€ Monsterì—ê²Œ Animationì„ ë„£ì–´ì£¼ê² ìŠµë‹ˆë‹¤.
+Project ì°½ì—ì„œ MonsterAnimation(slime1_front)ì„ ì°¾ì•„ì„œ Monsterì—ê²Œ ë“œë˜ê·¸ ì•¤ ë“œë¡­ì„ í†µí•´ ì¶”ê°€í•´ ì¤ë‹ˆë‹¤.
 
-´ÙÀ½ÀÇ CodeµéÀ» Ãß°¡ÇØ ÁÖ°í
-(Update´Â º¯°æÀÔ´Ï´Ù.)
+ë‹¤ìŒì˜ Codeë“¤ì„ ì¶”ê°€í•´ ì£¼ê³ 
+(UpdateëŠ” ë³€ê²½ì…ë‹ˆë‹¤.)
 ```
 	void Update()
     {
@@ -309,15 +309,15 @@ Project Ã¢¿¡¼­ MonsterAnimation(slime1_front)À» Ã£¾Æ¼­ Monster¿¡°Ô µå·¡±× ¾Ø µå·
     }
 
 ```
-´Ù½Ã Play ¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
+ë‹¤ì‹œ Play ë²„íŠ¼ìœ¼ë¡œ í™•ì¸í•´ ë´…ë‹ˆë‹¤.
 
-### 5. ÇÃ·¹ÀÌ¾î¸¦ µû¶ó´Ù´Ï´Â Ä«¸Ş¶ó ¸¸µé±â
-ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î°¡ ¿òÁ÷ÀÌ´Â °Í¿¡ µû¶ó¼­ °°ÀÌ ¿òÁ÷ÀÌ´Â Ä«¸Ş¶ó¸¦ ¸¸µé¾î º¸°Ú½À´Ï´Ù.
+### 5. í”Œë ˆì´ì–´ë¥¼ ë”°ë¼ë‹¤ë‹ˆëŠ” ì¹´ë©”ë¼ ë§Œë“¤ê¸°
+ì´ë²ˆì—ëŠ” í”Œë ˆì´ì–´ê°€ ì›€ì§ì´ëŠ” ê²ƒì— ë”°ë¼ì„œ ê°™ì´ ì›€ì§ì´ëŠ” ì¹´ë©”ë¼ë¥¼ ë§Œë“¤ì–´ ë³´ê² ìŠµë‹ˆë‹¤.
 
-ProjectÃ¢¿¡ ¿ìÅ¬¸¯À¸·Î Script¸¦ ¸¸µé¾î Áİ´Ï´Ù.
-ÀÌ¸§Àº CameraController.cs·Î ÇÏ°Ú½À´Ï´Ù.
+Projectì°½ì— ìš°í´ë¦­ìœ¼ë¡œ Scriptë¥¼ ë§Œë“¤ì–´ ì¤ë‹ˆë‹¤.
+ì´ë¦„ì€ CameraController.csë¡œ í•˜ê² ìŠµë‹ˆë‹¤.
 
-´ÙÀ½ÀÇ CodeµéÀ» ³Ö¾î ÁØ ´ÙÀ½¿¡
+ë‹¤ìŒì˜ Codeë“¤ì„ ë„£ì–´ ì¤€ ë‹¤ìŒì—
 ```
 public class CameraController : MonoBehaviour
 {
@@ -344,21 +344,21 @@ public class CameraController : MonoBehaviour
 ```
 
 ![Alt text](./image/Camera.png)
-¿ŞÂÊÀÇ Hierachy Ã¢¿¡ MainCamera¿¡ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
-Ãß°¡ÀûÀ¸·Î Size¸¦ ÁÙ¿©(2~3Á¤µµ) È­¸éÀ» È®´ëÇØ Áİ´Ï´Ù.
+ì™¼ìª½ì˜ Hierachy ì°½ì— MainCameraì— Scriptë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
+ì¶”ê°€ì ìœ¼ë¡œ Sizeë¥¼ ì¤„ì—¬(2~3ì •ë„) í™”ë©´ì„ í™•ëŒ€í•´ ì¤ë‹ˆë‹¤.
 
-ÀÌ¹ø¿¡µµ Play¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
+ì´ë²ˆì—ë„ Playë²„íŠ¼ìœ¼ë¡œ í™•ì¸í•´ ë´…ë‹ˆë‹¤.
 
-### 6. HP¹Ù ¸¸µé±â
-ÀÌ¹ø¿¡´Â ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍ¿¡°Ô HP¸¦ ¸¸µé¾î ÁÖ°í ±×°ÍÀ» º¸¿©ÁÙ HP¹Ù¸¦ ¸¸µé¾î º¸°Ú½À´Ï´Ù.
-Ãß°¡·Î ÇÃ·¹ÀÌ¾î¿Í ¸ó½ºÅÍ°¡ ºÎµúÈ÷¸é ¼­·Î°¡ HP°¡ ´Şµµ·Ï ÇØº¸°Ú½À´Ï´Ù.
+### 6. HPë°” ë§Œë“¤ê¸°
+ì´ë²ˆì—ëŠ” í”Œë ˆì´ì–´ì™€ ëª¬ìŠ¤í„°ì—ê²Œ HPë¥¼ ë§Œë“¤ì–´ ì£¼ê³  ê·¸ê²ƒì„ ë³´ì—¬ì¤„ HPë°”ë¥¼ ë§Œë“¤ì–´ ë³´ê² ìŠµë‹ˆë‹¤.
+ì¶”ê°€ë¡œ í”Œë ˆì´ì–´ì™€ ëª¬ìŠ¤í„°ê°€ ë¶€ë”ªíˆë©´ ì„œë¡œê°€ HPê°€ ë‹¬ë„ë¡ í•´ë³´ê² ìŠµë‹ˆë‹¤.
 
-¿ì¼± HP¸¦ ¸¸µé¾î ÁÖ±âÀ§ÇØ¼­ PlayerController¿Í MonsterController¿¡ class ¼±¾ğ ¾Æ·¡¿¡ Code¸¦ Ãß°¡ÇØ Áİ´Ï´Ù.
+ìš°ì„  HPë¥¼ ë§Œë“¤ì–´ ì£¼ê¸°ìœ„í•´ì„œ PlayerControllerì™€ MonsterControllerì— class ì„ ì–¸ ì•„ë˜ì— Codeë¥¼ ì¶”ê°€í•´ ì¤ë‹ˆë‹¤.
 ```
-    private float m_MaxHealth = 5.0f;//¿©±â´Â ¸¶À½´ë·Î Á¤ÇØÁÖ¼¼¿ä(ÇÃ·¹ÀÌ¾î´Â ³ôÀº°Ô ÁÁ°ÚÁÒ?)
+    private float m_MaxHealth = 5.0f;//ì—¬ê¸°ëŠ” ë§ˆìŒëŒ€ë¡œ ì •í•´ì£¼ì„¸ìš”(í”Œë ˆì´ì–´ëŠ” ë†’ì€ê²Œ ì¢‹ê² ì£ ?)
 ```
 
-´ÙÀ½ HealthBarController.cs Script¸¦ ¿­¾î¼­ ´ÙÀ½ÀÇ CodeµéÀ» ³Ö¾îÁİ´Ï´Ù.
+ë‹¤ìŒ HealthBarController.cs Scriptë¥¼ ì—´ì–´ì„œ ë‹¤ìŒì˜ Codeë“¤ì„ ë„£ì–´ì¤ë‹ˆë‹¤.
 ```
 
 public class HealthBarController : MonoBehaviour
@@ -401,41 +401,41 @@ public class HealthBarController : MonoBehaviour
 
 ```
 ![Alt text](./image/HealthBar1.png)
-´ÙÀ½ PrefabsÆú´õ¿¡ ÀÖ´Â HealthBar¸¦ Hierachy¿¡ Player³ª Monster¿¡°Ô µå·¡±× ¾Ø µå·ÓÀ¸·Î ¾Æ·¡ µé¾î°¡µµ·Ï ³Ö¾îÁİ´Ï´Ù.
-(HealthBar¸¦ µÎ°³ °¡Á®¿Í¼­ °¢°¢ ³Ö¾îÁÖ¸é µË´Ï´Ù. + ¹Ù·Î ³Ö¾îÁÖ¼¼¿ä.)
+ë‹¤ìŒ Prefabsí´ë”ì— ìˆëŠ” HealthBarë¥¼ Hierachyì— Playerë‚˜ Monsterì—ê²Œ ë“œë˜ê·¸ ì•¤ ë“œë¡­ìœ¼ë¡œ ì•„ë˜ ë“¤ì–´ê°€ë„ë¡ ë„£ì–´ì¤ë‹ˆë‹¤.
+(HealthBarë¥¼ ë‘ê°œ ê°€ì ¸ì™€ì„œ ê°ê° ë„£ì–´ì£¼ë©´ ë©ë‹ˆë‹¤. + ë°”ë¡œ ë„£ì–´ì£¼ì„¸ìš”.)
 
 ![Alt text](./image/HealthBar2.png)
 ![Alt text](./image/HealthBar3.png)
 
-´ÙÀ½À¸·Î MonsterController¿Í PlayerController Class ¼±¾ğ ¹Ø¿¡
+ë‹¤ìŒìœ¼ë¡œ MonsterControllerì™€ PlayerController Class ì„ ì–¸ ë°‘ì—
 ```
     private HealthBarController m_HealthController;
 ```
-MonsterController´Â Start()¿¡ 
-![Alt text](./image/HealthBar4.png)
+MonsterControllerëŠ” Start()ì—  
+![Alt text](./image/HealthBar4.png)  
 ```
         this.m_HealthController = this.transform.GetChild(0).GetComponent<HealthBarController>();
         this.m_HealthController.setMaxHealth(this.m_MaxHealth);
 ```
-PlayerController´Â Start()¿¡ 
-![Alt text](./image/HealthBar5.png)
+PlayerControllerëŠ” Start()ì—  
+![Alt text](./image/HealthBar5.png)  
 ```
         this.m_HealthController = this.transform.GetChild(1).GetComponent<HealthBarController>();
         this.m_HealthController.setMaxHealth(this.m_MaxHealth);
 ```
-¸¦ ³Ö¾îÁİ´Ï´Ù. (StartÇÔ¼ö¿¡ ³Ö´Â ÄÚµåÀÇ Â÷ÀÌ´Â GetChile(¼ıÀÚ) »ÓÀÔ´Ï´Ù.
+ë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤. (Startí•¨ìˆ˜ì— ë„£ëŠ” ì½”ë“œì˜ ì°¨ì´ëŠ” GetChile(ìˆ«ì) ë¿ì…ë‹ˆë‹¤.
 
 
 ![Alt text](./image/HealthBar6.png)
-ÀÌ¹ø¿¡µµ ¿ª½Ã Play¹öÆ°À¸·Î È®ÀÎÇØ º¾´Ï´Ù.
+ì´ë²ˆì—ë„ ì—­ì‹œ Playë²„íŠ¼ìœ¼ë¡œ í™•ì¸í•´ ë´…ë‹ˆë‹¤.
 
-### 7. ¸ó½ºÅÍ ·£´ı ½ºÆù ½ÃÅ°±â
-¸ó½ºÅÍ¸¦ ¸ÊÀÇ ·£´ı À§Ä¡¿¡¼­ »ı¼º½ÃÄÑ º¸°Ú½À´Ï´Ù.
+### 7. ëª¬ìŠ¤í„° ëœë¤ ìŠ¤í° ì‹œí‚¤ê¸°
+ëª¬ìŠ¤í„°ë¥¼ ë§µì˜ ëœë¤ ìœ„ì¹˜ì—ì„œ ìƒì„±ì‹œì¼œ ë³´ê² ìŠµë‹ˆë‹¤.
 
 ![Alt text](./image/Spawn1.png)
-¿ì¼± GameObject¸¦ ÇÏ³ª ¸¸µì´Ï´Ù.(Àú´Â SpawnManager¶ó°í ¸¸µé¾ú½À´Ï´Ù.)
+ìš°ì„  GameObjectë¥¼ í•˜ë‚˜ ë§Œë“­ë‹ˆë‹¤.(ì €ëŠ” SpawnManagerë¼ê³  ë§Œë“¤ì—ˆìŠµë‹ˆë‹¤.)
 
-SpawnController.cs Script¸¦ ¸¸µé°í ´ÙÀ½ Code ¸¦ ³Ö¾îÁİ´Ï´Ù.
+SpawnController.cs Scriptë¥¼ ë§Œë“¤ê³  ë‹¤ìŒ Code ë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 
 ```
 public class SpawnController : MonoBehaviour
@@ -462,18 +462,18 @@ public class SpawnController : MonoBehaviour
 ```
 
 ![Alt text](./image/Spawn2.png)
-SpawnManger GameObject¿¡ µå·¡±× ¾Ø µå·ÓÀ¸·Î ³Ö¾î ÁÖ°í
-Monster ObjectºÎºĞ¿¡ Monster GameObject¸¦ ³Ö¾îÁİ´Ï´Ù.
-±×¸®°í ¿øÇÏ´Â ¸¸Å­ MonsterMaxCount¸¦ ³Ö¾îÁİ´Ï´Ù.
+SpawnManger GameObjectì— ë“œë˜ê·¸ ì•¤ ë“œë¡­ìœ¼ë¡œ ë„£ì–´ ì£¼ê³ 
+Monster Objectë¶€ë¶„ì— Monster GameObjectë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
+ê·¸ë¦¬ê³  ì›í•˜ëŠ” ë§Œí¼ MonsterMaxCountë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 
-### 8. Å¸°İ, ÇÇ°İ ±¸ÇöÇÏ±â
-Áö±İ±îÁö Àß µû¶ó¿Í ÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù!
-¸¶Áö¸·À¸·Î Å¸°İ°ú ÇÇ°İÀ» ±¸ÇöÇØº¸µµ·Ï ÇÏ°Ú½À´Ï´Ù.
-¿ì¼± Player¿Í Monster¿¡°Ô add Component¸¦ ÅëÇØ BoxCollider2D¸¦ ³Ö¾îÁİ´Ï´Ù.
-±× ´ÙÀ½ Edit Collider¸¦ ´­·¯ Ä³¸¯ÅÍ Å©±â¿¡ ¸Â°Ô ColliderÅ©±â¸¦ Á¶ÀıÇØ Áİ´Ï´Ù.
-´ÙÀ½À¸·Î RigidBody2DÀÇ Constraints¸¦ ´­·¯¼­ Freeze Rotation Z¸¦ Ã¼Å©ÇØÁİ´Ï´Ù.
+### 8. íƒ€ê²©, í”¼ê²© êµ¬í˜„í•˜ê¸°
+ì§€ê¸ˆê¹Œì§€ ì˜ ë”°ë¼ì™€ ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤!
+ë§ˆì§€ë§‰ìœ¼ë¡œ íƒ€ê²©ê³¼ í”¼ê²©ì„ êµ¬í˜„í•´ë³´ë„ë¡ í•˜ê² ìŠµë‹ˆë‹¤.
+ìš°ì„  Playerì™€ Monsterì—ê²Œ add Componentë¥¼ í†µí•´ BoxCollider2Dë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
+ê·¸ ë‹¤ìŒ Edit Colliderë¥¼ ëˆŒëŸ¬ ìºë¦­í„° í¬ê¸°ì— ë§ê²Œ Colliderí¬ê¸°ë¥¼ ì¡°ì ˆí•´ ì¤ë‹ˆë‹¤.
+ë‹¤ìŒìœ¼ë¡œ RigidBody2Dì˜ Constraintsë¥¼ ëˆŒëŸ¬ì„œ Freeze Rotation Zë¥¼ ì²´í¬í•´ì¤ë‹ˆë‹¤.
 
-´ÙÀ½ MonsterController¿¡ ¾Æ·¡ÀÇ CodeµéÀ» Ãß°¡ÇØÁİ´Ï´Ù.
+ë‹¤ìŒ MonsterControllerì— ì•„ë˜ì˜ Codeë“¤ì„ ì¶”ê°€í•´ì¤ë‹ˆë‹¤.
 ```
     private void OnCollisionEnter2D(Collision2D Collider)
     {
@@ -497,7 +497,7 @@ Monster ObjectºÎºĞ¿¡ Monster GameObject¸¦ ³Ö¾îÁİ´Ï´Ù.
         this.transform.position -= (target.transform.position - this.transform.position) * 30 * Time.deltaTime;
     }
 ```
-±×¸®°í PlayerController.cs ´Â
+ê·¸ë¦¬ê³  PlayerController.cs ëŠ”
 
 ```
 public class PlayerController : MonoBehaviour
@@ -619,11 +619,11 @@ public class PlayerController : MonoBehaviour
     }
 }
 ```
-ÀÌ·¸°Ô ¼öÁ¤ÇØ Áİ´Ï´Ù. (±×´ë·Î º¹»ç ºÙ¿©³Ö±â¸¦ ÇÏ¼Åµµ µË´Ï´Ù.
+ì´ë ‡ê²Œ ìˆ˜ì •í•´ ì¤ë‹ˆë‹¤. (ê·¸ëŒ€ë¡œ ë³µì‚¬ ë¶™ì—¬ë„£ê¸°ë¥¼ í•˜ì…”ë„ ë©ë‹ˆë‹¤.
 
-±×¸®°í
-GameObject¸¦ ¸¸µé¾î¼­ GunÀÌ¶ó´Â ÀÌ¸§À¸·Î ¸¸µé¾îÁØ ÈÄ
-GunController.cs¸¦ ¸¸µé¾î ´ÙÀ½ÀÇ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
+ê·¸ë¦¬ê³ 
+GameObjectë¥¼ ë§Œë“¤ì–´ì„œ Gunì´ë¼ëŠ” ì´ë¦„ìœ¼ë¡œ ë§Œë“¤ì–´ì¤€ í›„
+GunController.csë¥¼ ë§Œë“¤ì–´ ë‹¤ìŒì˜ Scriptë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 ```
 
 public class GunController : MonoBehaviour
@@ -654,10 +654,10 @@ public class GunController : MonoBehaviour
 }
 ```
 ![Alt text](./image/Collider2.png)
-Gun Object¿¡ Script¿Í Sprite Renderer¸¦ ³Ö°í ´ÙÀ½°ú °°ÀÌ ¼³Á¤ÇØÁİ´Ï´Ù.
-bulletÀº prefabsÆú´õ¿¡ ÀÖ°í,
-°¢ ÀÌ¹ÌÁöµéÀº topdown_shooter/guns/mg¿¡ ÀÖ½À´Ï´Ù.
-´ÙÀ½À¸·Î BulletController.cs¸¦ ¿­¾î¼­ ´ÙÀ½ÀÇ Script¸¦ ³Ö¾îÁİ´Ï´Ù.
+Gun Objectì— Scriptì™€ Sprite Rendererë¥¼ ë„£ê³  ë‹¤ìŒê³¼ ê°™ì´ ì„¤ì •í•´ì¤ë‹ˆë‹¤.
+bulletì€ prefabsí´ë”ì— ìˆê³ ,
+ê° ì´ë¯¸ì§€ë“¤ì€ topdown_shooter/guns/mgì— ìˆìŠµë‹ˆë‹¤.
+ë‹¤ìŒìœ¼ë¡œ BulletController.csë¥¼ ì—´ì–´ì„œ ë‹¤ìŒì˜ Scriptë¥¼ ë„£ì–´ì¤ë‹ˆë‹¤.
 ```
 
 public class BulletController : MonoBehaviour
@@ -692,13 +692,13 @@ public class BulletController : MonoBehaviour
 ```
 
 ![Alt text](./image/Collider3.png)
-Gun Object¸¦ Player¿¡ ³Ö¾îÁÖ°í °¡Àå ¾Æ·¡ À§Ä¡ÇÏµµ·Ï
-InspectorÃ¢ÀÇ PositionÀ» Ä³¸¯ÅÍ°¡ µé°í ÀÖ´Â °ÍÃ³·³ Àß ¸ÂÃçÁÖ½Ã¸é µË´Ï´Ù!
+Gun Objectë¥¼ Playerì— ë„£ì–´ì£¼ê³  ê°€ì¥ ì•„ë˜ ìœ„ì¹˜í•˜ë„ë¡
+Inspectorì°½ì˜ Positionì„ ìºë¦­í„°ê°€ ë“¤ê³  ìˆëŠ” ê²ƒì²˜ëŸ¼ ì˜ ë§ì¶°ì£¼ì‹œë©´ ë©ë‹ˆë‹¤!
 
 ![Alt text](./image/Collider4.png)
 ![Alt text](./image/Collider5.png)
-¸¶Áö¸·À¸·Î Monster¿ÀºêÁ§Æ®¸¦ PrefabsÆú´õ·Î µå·¡±× ÇØÁØ µÚ hieracht¿¡¼­ ¾ø¾Ö°í SpawnManagerÀÇ Script¿¡ PrefabsÆú´õÀÇ Monster¸¦ ³Ö¾îÁÖ½Ã¸é µË´Ï´Ù!
+ë§ˆì§€ë§‰ìœ¼ë¡œ Monsterì˜¤ë¸Œì íŠ¸ë¥¼ Prefabsí´ë”ë¡œ ë“œë˜ê·¸ í•´ì¤€ ë’¤ hierachtì—ì„œ ì—†ì• ê³  SpawnManagerì˜ Scriptì— Prefabsí´ë”ì˜ Monsterë¥¼ ë„£ì–´ì£¼ì‹œë©´ ë©ë‹ˆë‹¤!
 
 
 ![Alt text](./image/Collider6.png)
-±×·¯¸é ¿Ï¼ºÀÔ´Ï´Ù!
+ê·¸ëŸ¬ë©´ ì™„ì„±ì…ë‹ˆë‹¤!
