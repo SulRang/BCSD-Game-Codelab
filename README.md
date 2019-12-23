@@ -702,3 +702,5 @@ Inspector창의 Position을 캐릭터가 들고 있는 것처럼 잘 맞춰주시면 됩니다!
 
 ![Alt text](./image/Collider6.png)
 그러면 완성입니다!
+
+방향키와 Space로 게임을 즐겨보세요!
